@@ -1,0 +1,139 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     list-style-type: none;
+ }
+
+ body {
+     background-color: rgb(45, 36, 76);
+ }
+
+ .heading {
+     text-align: center;
+     background-color: rgb(24 18 43);
+     padding: 20px;
+     color: white;
+
+ }
+
+ #hamburger {
+     color: white;
+     height: 670px;
+     background: rgba(255, 255, 255, 0.21);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(1.63px);
+     -webkit-backdrop-filter: blur(1.63px);
+     border-radius: 25px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     padding: 20px;
+     /* text-align: center; */
+ }
+
+ main div {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     padding: 15px;
+     gap: 15px;
+ }
+
+ #hamburger ol {
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+     font-size: 25px;
+ }
+
+ #tasks {
+     height: 670px;
+     background: rgba(255, 255, 255, 0.21);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(1.63px);
+     -webkit-backdrop-filter: blur(1.63px);
+     border-radius: 25px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+
+     display: flex;
+     padding: 50px;
+     /* justify-content: center; */
+     align-items: center;
+     gap: 20px;
+     flex-direction: column;
+
+ }
+
+ .taskstyle {
+
+     border: 2px solid black;
+     padding: 15px;
+     border-radius: 5px;
+     cursor: pointer;
+    
+ }
+
+ #task {
+     width: 600px;
+     background-color: transparent;
+     font-size: 20px;
+     font-weight: bolder;
+     color: white;
+ }
+
+ #addbtn {
+     width: 100px;
+     font-size: 20px;
+     font-weight: bolder;
+     background-color: rgb(24 18 43);
+     color: white;
+ }
+ #addbtn:hover{
+    background-color: white;
+    color: black;
+ }
+
+ #textadd {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+ }
+.taskContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#svg{
+    cursor: pointer;
+    display: none;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#svg:hover{
+    background-color: rgb(183, 50, 50);
+}
+ @media screen and (max-width:767px) {
+     #hamburger {
+         display: none;
+     }
+
+     #task {
+         width: 300px;
+     }
+
+     #tasks {
+         width: 100%;
+     }
+
+     main div {
+         display: flex;
+     }
+
+     /* #textadd{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            } */
+
+ }
